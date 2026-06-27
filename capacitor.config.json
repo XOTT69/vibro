@@ -1,0 +1,11 @@
+{
+  "appId": "com.xott69.vibro",
+  "appName": "Vibro",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "ios": {
+    "contentInset": "automatic"
+  }
+}
