@@ -1,21 +1,28 @@
 {
   "name": "vibro",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "cap:add:ios": "cap add ios",
+    "cap:sync": "cap sync",
+    "ios": "npm run build && cap sync ios && cap open ios"
   },
   "dependencies": {
+    "@capacitor-community/bluetooth-le": "latest",
+    "@capacitor/core": "latest",
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
+    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "lucide-react": "latest"
+    "vite": "latest"
   },
   "devDependencies": {
+    "@capacitor/cli": "latest",
+    "@capacitor/ios": "latest",
     "typescript": "latest"
   }
 }
