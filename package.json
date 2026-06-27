@@ -1,15 +1,15 @@
 {
   "name": "vibro",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": false,
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "cap:add:ios": "cap add ios",
-    "cap:sync": "cap sync",
-    "ios": "npm run build && cap sync ios && cap open ios"
+    "ios:prepare": "npm run build && node scripts/prepare-ios.mjs",
+    "ios": "npm run ios:prepare && cap open ios",
+    "cap:sync": "cap sync"
   },
   "dependencies": {
     "@capacitor-community/bluetooth-le": "latest",
