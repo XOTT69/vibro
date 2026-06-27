@@ -1,37 +1,30 @@
 # Vibro
 
-Experimental PWA for BLE debugging and future custom control of Satisfyer Heated Affair.
+Український експериментальний застосунок для BLE-дебагу.
 
-## Important
-
-This is an early prototype. It currently scans Bluetooth LE devices and lists services/characteristics.
-Real Satisfyer commands still need to be discovered and added.
-
-## Requirements
-
-- Chrome on Android or Desktop Chrome
-- HTTPS hosting, for example Vercel
-- Bluetooth enabled
-
-iOS/Safari does not support Web Bluetooth for direct PWA control.
-
-## Local dev
+## Запуск вебверсії
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local URL in Chrome.
+## Збірка для iPhone
 
-## Deploy to Vercel
+Інструкція тут: [IOS_SETUP.md](./IOS_SETUP.md)
 
-1. Import this repository in Vercel.
-2. Framework preset: Vite.
-3. Build command: `npm run build`.
-4. Output directory: `dist`.
+Команди:
 
-## Next step
+```bash
+npm install
+npm run build
+npm run cap:add:ios
+npm run cap:sync
+npm run ios
+```
 
-Run the app, press Connect / Scan, select the toy, and copy the Debug log.
-Then we can add the exact Satisfyer BLE service/characteristic and commands.
+## Деплой на Vercel
+
+- Framework preset: `Vite`
+- Build command: `npm run build`
+- Output directory: `dist`
