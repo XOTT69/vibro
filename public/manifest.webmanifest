@@ -1,0 +1,9 @@
+{
+  "name": "Vibro BLE Controller",
+  "short_name": "Vibro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#12051f",
+  "theme_color": "#6d28d9",
+  "icons": []
+}
