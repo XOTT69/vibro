@@ -7,5 +7,15 @@
   },
   "ios": {
     "contentInset": "automatic"
+  },
+  "plugins": {
+    "BluetoothLe": {
+      "displayStrings": {
+        "scanning": "Сканування...",
+        "cancel": "Скасувати",
+        "availableDevices": "Доступні пристрої",
+        "noDeviceFound": "Пристрої не знайдено"
+      }
+    }
   }
 }
